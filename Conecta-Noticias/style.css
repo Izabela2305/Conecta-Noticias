@@ -1,0 +1,453 @@
+/* =====================================================
+   CONECTA NOTÍCIAS
+   CSS PRINCIPAL
+   ===================================================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fb;
+    color: #1f2937;
+    margin: 0;
+}
+
+
+/* =====================================================
+   NAVBAR
+   ===================================================== */
+
+.navbar {
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+    font-size: 1.3rem;
+}
+
+.nav-link {
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #93c5fd !important;
+}
+
+
+/* =====================================================
+   HERO
+   ===================================================== */
+
+.hero-section {
+    background: linear-gradient(135deg, #111827, #2563eb);
+    color: white;
+    padding: 80px 0;
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.hero-section p {
+    line-height: 1.7;
+}
+
+.hero-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    border-radius: 18px;
+}
+
+
+/* =====================================================
+   TÍTULOS
+   ===================================================== */
+
+.section-title {
+    font-weight: bold;
+    color: #111827;
+}
+
+
+/* =====================================================
+   SEÇÃO EM DESTAQUE
+   ===================================================== */
+
+.destaque-card {
+    border-radius: 18px;
+}
+
+.destaque-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* =====================================================
+   CARROSSEL
+   ===================================================== */
+
+.carousel {
+    border-radius: 18px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 12px;
+    padding: 18px;
+}
+
+
+/* =====================================================
+   CATEGORIAS
+   ===================================================== */
+
+.category-card {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    height: 100%;
+    transition: 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.category-card i {
+    font-size: 3rem;
+    color: #2563eb;
+}
+
+.category-card h3 {
+    margin-top: 18px;
+    font-size: 1.2rem;
+}
+
+.category-card p {
+    color: #64748b;
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   BUSCA
+   ===================================================== */
+
+.search-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.search-box h2 {
+    margin-bottom: 18px;
+}
+
+#campoBusca {
+    border-radius: 10px;
+}
+
+#campoBusca:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.15);
+}
+
+
+/* =====================================================
+   CARDS DE NOTÍCIAS
+   ===================================================== */
+
+.noticia-card {
+    overflow: hidden;
+    border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.noticia-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15) !important;
+}
+
+.noticia-card .card-img-top {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+.noticia-card .card-body {
+    padding: 22px;
+}
+
+.noticia-card h3 {
+    margin-top: 15px;
+    font-size: 1.3rem;
+    color: #111827;
+}
+
+.noticia-card p {
+    line-height: 1.6;
+    color: #64748b;
+}
+
+.category-badge {
+    width: fit-content;
+}
+
+
+/* =====================================================
+   BOTÕES DE FAVORITO
+   ===================================================== */
+
+.favorito-btn {
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+.favorito-btn:hover {
+    transform: translateY(-2px);
+}
+
+.favorito-btn.ativo {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: white;
+}
+
+
+/* =====================================================
+   SOBRE
+   ===================================================== */
+
+.about-section {
+    background-color: #eaf0ff;
+}
+
+.about-section p {
+    line-height: 1.8;
+}
+
+.about-section img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+    border-radius: 18px;
+}
+
+
+/* =====================================================
+   CONTATO
+   ===================================================== */
+
+.contact-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 18px;
+}
+
+.contact-box .form-control {
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.contact-box .form-control:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.15);
+}
+
+
+/* =====================================================
+   MENSAGENS DO FORMULÁRIO
+   ===================================================== */
+
+.erro-formulario {
+    background-color: #fef2f2;
+    color: #dc3545;
+    padding: 14px;
+    border-radius: 8px;
+}
+
+.sucesso-formulario {
+    background-color: #f0fdf4;
+    color: #198754;
+    padding: 14px;
+    border-radius: 8px;
+}
+
+
+/* =====================================================
+   BOTÃO VOLTAR AO TOPO
+   ===================================================== */
+
+#voltarTopo {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+}
+
+
+/* =====================================================
+   PÁGINAS DAS NOTÍCIAS
+   ===================================================== */
+
+.pagina-noticia {
+    max-width: 950px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 45px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.pagina-noticia h1 {
+    font-weight: bold;
+    color: #111827;
+}
+
+.pagina-noticia p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #475569;
+}
+
+.noticia-real-image {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+    border-radius: 16px;
+    margin: 25px 0 35px;
+}
+
+
+/* =====================================================
+   RODAPÉ
+   ===================================================== */
+
+footer {
+    margin-top: 50px;
+}
+
+
+/* =====================================================
+   RESPONSIVIDADE
+   ===================================================== */
+
+@media (max-width: 992px) {
+
+    .hero-section h1 {
+        font-size: 3.2rem;
+    }
+
+    .destaque-image {
+        height: 300px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .hero-section {
+        padding: 55px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-image {
+        height: 280px;
+    }
+
+    .destaque-image {
+        height: 280px;
+    }
+
+    .carousel-item img {
+        height: 320px;
+    }
+
+    .about-section img {
+        height: 280px;
+    }
+
+    .pagina-noticia {
+        margin: 25px 15px;
+        padding: 25px;
+    }
+
+    .noticia-real-image {
+        height: 300px;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-section p {
+        font-size: 15px;
+    }
+
+    .hero-image {
+        height: 230px;
+    }
+
+    .destaque-image {
+        height: 240px;
+    }
+
+    .carousel-item img {
+        height: 240px;
+    }
+
+    .contact-box {
+        padding: 25px;
+    }
+
+    .noticia-card .card-img-top {
+        height: 200px;
+    }
+
+    .about-section img {
+        height: 230px;
+    }
+
+    .pagina-noticia {
+        padding: 20px;
+    }
+
+    .noticia-real-image {
+        height: 220px;
+    }
+
+    .favorito-btn {
+        margin-left: 0;
+        margin-top: 8px;
+    }
+
+}
